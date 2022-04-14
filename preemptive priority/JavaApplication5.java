@@ -84,8 +84,16 @@ public class JavaApplication5 {
                   time++;
                   
                   arr.get(maxPriority).burstTime--;
+                  if (arr.get(maxPriority).burstTime == 0){
+                  arr.get(maxPriority).departureTime = time;
+                  }
             }
                 
+            }
+            //printing departure time versus name
+            for (int i = 0; i < arr.size(); i++) {
+                System.out.println("");
+                System.out.println(arr.get(i).name+" "+arr.get(i).departureTime+"  ");
             }
         }
     

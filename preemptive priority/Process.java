@@ -41,6 +41,7 @@ public class Process implements Comparable{
     double arrivalTime;
     double burstTime;
     int priority;
+    int departureTime = -1;
 
    
 }
